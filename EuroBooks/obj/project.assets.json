@@ -3284,7 +3284,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.9",
-          "Microsoft.EntityFrameworkCore": "5.0.9"
+          "Microsoft.EntityFrameworkCore": "5.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
         },
         "compile": {
           "bin/placeholder/EuroBooks.Core.dll": {}

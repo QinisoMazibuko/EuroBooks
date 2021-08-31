@@ -1,8 +1,5 @@
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.csprojAssemblyReference.cache
-C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.AssemblyInfoInputs.cache
-C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.AssemblyInfo.cs
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\EuroBooks.MailWorker.exe
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\EuroBooks.MailWorker.deps.json
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\EuroBooks.MailWorker.runtimeconfig.json
@@ -36,7 +33,10 @@ C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWor
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.AssemblyInfoInputs.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.AssemblyInfo.cs
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.csproj.CopyComplete
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.dll
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.pdb
 C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.genruntimeconfig.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.MailWorker\obj\Debug\netcoreapp3.1\EuroBooks.MailWorker.csprojAssemblyReference.cache
