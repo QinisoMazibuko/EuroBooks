@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroBooks.API", "EuroBooks\EuroBooks.API.csproj", "{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EuroBooks.API's", "EuroBooks.API's", "{9FA34CA9-89DB-4CE5-A028-B9CD5EB75979}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "V1", "V1", "{9836BD28-71FB-4E1B-A26E-F6AAB9942228}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EuroBooks.Data", "EuroBooks.Data", "{08C7FEE1-3DAB-4994-B966-000EB34AF45B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroBooks.Core", "EuroBooks.Core\EuroBooks.Core.csproj", "{2283940D-D406-4665-9326-55842F01E0D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EuroBooks.Tests", "EuroBooks.Tests", "{061A0EFE-5DBC-4798-853C-539FEEE02FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroBooks_Tests", "EuroBooks_Tests\EuroBooks_Tests.csproj", "{9417D74E-C574-4736-81D7-2C90AB9F8749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuroBooks.MailWorker", "EuroBooks.MailWorker\EuroBooks.MailWorker.csproj", "{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EuroBooks.Workers", "EuroBooks.Workers", "{8AC221C3-CEBA-4C6C-88FA-A117F711D864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2283940D-D406-4665-9326-55842F01E0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2283940D-D406-4665-9326-55842F01E0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2283940D-D406-4665-9326-55842F01E0D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2283940D-D406-4665-9326-55842F01E0D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9417D74E-C574-4736-81D7-2C90AB9F8749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9417D74E-C574-4736-81D7-2C90AB9F8749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9417D74E-C574-4736-81D7-2C90AB9F8749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9417D74E-C574-4736-81D7-2C90AB9F8749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{007D1D39-ADE9-4E75-B1E7-3176BC6E1F4D} = {9836BD28-71FB-4E1B-A26E-F6AAB9942228}
+		{9836BD28-71FB-4E1B-A26E-F6AAB9942228} = {9FA34CA9-89DB-4CE5-A028-B9CD5EB75979}
+		{2283940D-D406-4665-9326-55842F01E0D5} = {08C7FEE1-3DAB-4994-B966-000EB34AF45B}
+		{9417D74E-C574-4736-81D7-2C90AB9F8749} = {061A0EFE-5DBC-4798-853C-539FEEE02FAE}
+		{774D5177-AFD3-41B5-A5CD-E60B7FC63FE3} = {8AC221C3-CEBA-4C6C-88FA-A117F711D864}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01F22E9B-2398-49EC-8E6E-BD358386CB82}
+	EndGlobalSection
+EndGlobal
