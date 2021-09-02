@@ -1,6 +1,12 @@
 using System;
 using System.Text;
-using EuroBooks.Core.Shared;
+using EuroBooks.API.Services;
+using EuroBooks.Application;
+using EuroBooks.Application.Common.Interfaces;
+using EuroBooks.Infrastructure;
+using EuroBooks.Infrastructure.Configuration;
+using EuroBooks.Infrastructure.Identity;
+using EuroBooks.Infrastructure.Persistance;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,32 +22,59 @@ namespace EuroBooks
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment Environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region configure cors 
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins(Configuration.GetSection("ApplicationSettings")["CLient_URL"])
+                                .AllowAnyHeader()
+                                .AllowAnyMethod()
+                                .AllowCredentials()
+                                .SetIsOriginAllowed((host) => true)
+                                .SetPreflightMaxAge(TimeSpan.FromSeconds(2520));
+                    });
+            });
+            #endregion
+
+            #region Infrastructure
+            // Add infrastructure & DBContext using extension class
+            services.AddApplication();
+            services.AddInfrastructure(Configuration, Environment);
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
+
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
+
             // inject AppSettings 
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
+            #endregion
 
             services.AddControllers();
 
-            services.AddDbContext<EuroBooksContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("EuroBooksConnection")),
-            ServiceLifetime.Transient);
+            #region AppSettings Configurations
+            var jwtConfig = new JwtConfiguration();
+            Configuration.Bind("Jwt", jwtConfig);
+            services.AddSingleton<IJwtConfiguration>(jwtConfig);
+            #endregion AppSettings Configurations
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-            .AddEntityFrameworkStores<EuroBooksContext>();
 
-            // add cors 
-            services.AddCors();
-
-            // JWT Authentication 
+            #region JWT Authentication 
             var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
 
             services.AddAuthentication(x =>
@@ -52,9 +85,8 @@ namespace EuroBooks
             }).AddJwtBearer(x =>
             {
                 x.RequireHttpsMetadata = false;
-
                 x.SaveToken = false;
-                x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                x.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
@@ -63,7 +95,9 @@ namespace EuroBooks
                     ClockSkew = TimeSpan.Zero
                 };
             });
+            #endregion
 
+            #region Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo 
@@ -73,13 +107,12 @@ namespace EuroBooks
                     Version = "v1" 
                 });
             });
+            #endregion
 
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
-        UserManager<ApplicationUser> userManager,
-         RoleManager<IdentityRole> roleManager)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseSwagger();
             if (env.IsDevelopment())
@@ -99,7 +132,7 @@ namespace EuroBooks
 
             app.UseAuthentication();
 
-            MyIdentityDataInitializer.SeedData(userManager, roleManager);
+            // MyIdentityDataInitializer.SeedData(userManager, roleManager);
 
             app.UseRouting();
 

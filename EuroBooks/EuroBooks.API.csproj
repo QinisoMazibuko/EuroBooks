@@ -26,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EuroBooks.Core\EuroBooks.Core.csproj" />
+    <ProjectReference Include="..\EuroBooks.Application\EuroBooks.Application.csproj" />
+    <ProjectReference Include="..\EuroBooks.Core\EuroBooks.Infrastructure.csproj" />
   </ItemGroup>
 
 

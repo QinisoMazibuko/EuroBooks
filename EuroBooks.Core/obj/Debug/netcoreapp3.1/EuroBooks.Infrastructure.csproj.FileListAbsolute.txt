@@ -1,0 +1,16 @@
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Infrastructure.deps.json
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Infrastructure.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.AssemblyInfo.cs
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Infrastructure.runtimeconfig.json
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Infrastructure.runtimeconfig.dev.json
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.genruntimeconfig.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Infrastructure.pdb
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Application.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Domain.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Application.pdb
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\bin\Debug\netcoreapp3.1\EuroBooks.Domain.pdb
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.csproj.CopyComplete
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Core\obj\Debug\netcoreapp3.1\EuroBooks.Infrastructure.pdb

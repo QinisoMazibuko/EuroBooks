@@ -1,0 +1,8 @@
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\bin\Debug\netcoreapp3.1\EuroBooks.Domain.deps.json
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\bin\Debug\netcoreapp3.1\EuroBooks.Domain.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\bin\Debug\netcoreapp3.1\EuroBooks.Domain.pdb
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\obj\Debug\netcoreapp3.1\EuroBooks.Domain.csprojAssemblyReference.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\obj\Debug\netcoreapp3.1\EuroBooks.Domain.AssemblyInfoInputs.cache
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\obj\Debug\netcoreapp3.1\EuroBooks.Domain.AssemblyInfo.cs
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\obj\Debug\netcoreapp3.1\EuroBooks.Domain.dll
+C:\Users\Qiniso Mazibuko\Desktop\All-react\EuroBooks\EuroBooks\EuroBooks.Domain\obj\Debug\netcoreapp3.1\EuroBooks.Domain.pdb
