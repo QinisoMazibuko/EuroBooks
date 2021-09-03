@@ -29,6 +29,8 @@ namespace EuroBooks.Infrastructure.Persistance
 
         public DbSet<ApplicationVariables> ApplicationVariables { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
 
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

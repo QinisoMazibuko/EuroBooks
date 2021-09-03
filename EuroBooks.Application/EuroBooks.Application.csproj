@@ -17,4 +17,9 @@
     <ProjectReference Include="..\EuroBooks.Domain\EuroBooks.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Subscribtion\Commands\" />
+    <Folder Include="Subscribtion\Queries\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,480 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.API.Tests\\EuroBooks.API.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.API.Tests\\EuroBooks.API.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.API.Tests\\EuroBooks.API.Tests.csproj",
+        "projectName": "EuroBooks.API.Tests",
+        "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.API.Tests\\EuroBooks.API.Tests.csproj",
+        "packagesPath": "C:\\Users\\Qiniso Mazibuko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.API.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Qiniso Mazibuko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\EuroBooks.API.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\EuroBooks.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.AspNetCore.TestHost": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            },
+            "Respawn": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj",
+        "projectName": "EuroBooks.Application",
+        "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj",
+        "packagesPath": "C:\\Users\\Qiniso Mazibuko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Qiniso Mazibuko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Z.EntityFramework.Plus.EFCore": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\EuroBooks.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\EuroBooks.Infrastructure.csproj",
+        "projectName": "EuroBooks.Infrastructure",
+        "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\EuroBooks.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Qiniso Mazibuko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Qiniso Mazibuko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj"
+              },
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj",
+        "projectName": "EuroBooks.Domain",
+        "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\EuroBooks.Domain.csproj",
+        "packagesPath": "C:\\Users\\Qiniso Mazibuko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Qiniso Mazibuko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\EuroBooks.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\EuroBooks.API.csproj",
+        "projectName": "EuroBooks.API",
+        "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\EuroBooks.API.csproj",
+        "packagesPath": "C:\\Users\\Qiniso Mazibuko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Qiniso Mazibuko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Application\\EuroBooks.Application.csproj"
+              },
+              "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\EuroBooks.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Qiniso Mazibuko\\Desktop\\All-react\\EuroBooks\\EuroBooks\\EuroBooks.Core\\EuroBooks.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.OData": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.Core": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

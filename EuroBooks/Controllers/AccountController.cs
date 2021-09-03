@@ -17,7 +17,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EuroBooks.API.Controllers
 {
     /// <summary>
-    /// Manages User Accounts
+    /// Endpoints to Manage User Accounts
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -35,7 +35,7 @@ namespace EuroBooks.API.Controllers
 
 
         /// <summary>
-        /// Get list of users
+        /// Get list of all system users
         /// </summary>
         /// <param name="paging"></param>
         /// <returns>User list</returns>
@@ -131,7 +131,7 @@ namespace EuroBooks.API.Controllers
         }
 
         /// <summary>
-        /// Get list of Super Admin and Maintanance Admin users 
+        /// Get list of  Admin and  Subscriber users 
         /// </summary>
         /// <param name="param"></param>
         /// <returns>User list</returns>
