@@ -19,8 +19,7 @@
 * The Backend solution is an implementation of the command, Query, Responsibility Segragation Pattern/Architecture (CQRS) 
 * API
 	* EuroBooks.API
-		* This layer depends on both the Application and Infrastructure layers, however, the dependency on Infrastructure is only to support dependency injection. Therefore only *Startup.cs* should reference Infrastructure.
-		* In appsettings.json 
+		* This layer depends on both the Application and Infrastructure layers, however, the dependency on Infrastructure is only to support dependency injection. Therefore only *Startup.cs* references Infrastructure.
 		* To be able to run migrations, set this as Startup project
 		* Run migrations using following command
 		> Add-Migration 'Migration text' -Context ApplicationDbContext -OutputDir Migrations\SQLServer
@@ -41,4 +40,4 @@
 > For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
 * Domain
 	* EuroBooks.Domain
-> This will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer
+> This contains all entities, enums, exceptions, interfaces, types and logic specific to the domain layer

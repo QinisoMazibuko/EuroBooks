@@ -35,7 +35,6 @@ namespace EuroBooks.Application.Book.Queries
                             };
 
                 var result = await books.ToListAsync();
-               
 
                 return result;
             }
