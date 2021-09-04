@@ -27,9 +27,9 @@ namespace EuroBooks.API.Tests.Authorize
         public async Task Should_LogUserIn()
         {
             // Arrange
-            await RunAsUserAsync("test@user", "Test@123", "Test", "User", "SuperAdmin");
+            await RunAsUserAsync("test@gmail.com", "Testing@123", "Test", "User", "Admin");
 
-            var content = new LoginModel { Username = "test@user", Password = "Test@123" };
+            var content = new LoginModel { Username = "test@gmail.com", Password = "Testing@123" };
 
             // Act
             var response = await client.PostAsync("/api/authorize/login", ContentHelper.GetStringContent(content));

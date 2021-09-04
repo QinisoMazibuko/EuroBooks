@@ -5,6 +5,7 @@ using EuroBooks.Application;
 using EuroBooks.Application.Common.Interfaces;
 using EuroBooks.Infrastructure;
 using EuroBooks.Infrastructure.Configuration;
+using EuroBooks.Infrastructure.Extensions;
 using EuroBooks.Infrastructure.Identity;
 using EuroBooks.Infrastructure.Persistance;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -23,7 +24,10 @@ namespace EuroBooks
     {
         public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
-            Configuration = configuration;  // configuration.BuildAppSettings(environment);
+            IConfigurationBuilder builder = new ConfigurationBuilder()           
+             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            Configuration =  builder.Build();  
             Environment = environment;
         }
 
@@ -51,8 +55,9 @@ namespace EuroBooks
 
             #region Infrastructure
             // Add infrastructure & DBContext using extension class
-            services.AddApplication();
             services.AddInfrastructure(Configuration, Environment);
+            services.AddApplication();
+       
             services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             services.AddIdentity<ApplicationUser, ApplicationRole>()
@@ -66,15 +71,13 @@ namespace EuroBooks
 
             services.AddControllers();
 
+            #region JWT Authentication 
+
             #region AppSettings Configurations
             var jwtConfig = new JwtConfiguration();
             Configuration.Bind("Jwt", jwtConfig);
             services.AddSingleton<IJwtConfiguration>(jwtConfig);
             #endregion AppSettings Configurations
-
-
-            #region JWT Authentication 
-            var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
 
             services.AddAuthentication(x =>
             {
@@ -88,7 +91,7 @@ namespace EuroBooks
                 x.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfig.Secret)),
                     ValidateIssuer = false,
                     ValidateAudience = false,
                     ClockSkew = TimeSpan.Zero
@@ -123,11 +126,7 @@ namespace EuroBooks
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(builder =>
-            builder.WithOrigins(Configuration["ApplicationSettings:CLient_URL"].ToString())
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            );
+            app.UseCors();
 
             app.UseAuthentication();
 

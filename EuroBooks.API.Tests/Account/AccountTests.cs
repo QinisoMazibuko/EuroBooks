@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using NUnit.Framework;
 using Shouldly;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -37,7 +38,7 @@ namespace EuroBooks.API.Tests.Account
             // Arrange
             await Login(userName, role);
 
-            var content = new UserModel { UserName = "jack@test.co", Email = "jack@test.co", FirstName = "Jack", LastName = "Green", Password = "JackTest1!" };
+            var content = new UserModel { UserName = "jack@test.co", Email = "jack@test.co", FirstName = "Jack", LastName = "Green", Password = "JackTest1!", UserRoles = new List<string> {"Admin"} };
 
             // Act
             var response = await client.PostAsync($"/api/account/user", ContentHelper.GetStringContent(content));

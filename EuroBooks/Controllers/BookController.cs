@@ -29,7 +29,7 @@ namespace EuroBooks.API.Controllers
 
 
         /// <summary>
-        /// Get list of all Books
+        /// Get list of all Books for datatables
         /// </summary>
         /// <returns></returns>
         [EnableQuery]
@@ -61,6 +61,29 @@ namespace EuroBooks.API.Controllers
         }
 
         /// <summary>
+        /// Get list of all Books 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("listAll", Order = 2)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> ListAll()
+        {
+            try
+            {
+                var response = await Mediator.Send(new GetAllBooksQuery ());
+
+                return Ok( response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
+        /// <summary>
         /// Add a new Book
         /// </summary>
         /// <param name="command"></param>
@@ -83,7 +106,7 @@ namespace EuroBooks.API.Controllers
         /// <param name="command"></param>
         /// <returns></returns>
         [Authorize(Roles = "Admin")]
-        [HttpPut(Order = 3)]
+        [HttpPut("{id}", Order = 3)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -141,7 +164,7 @@ namespace EuroBooks.API.Controllers
             if (!response)
                 return BadRequest("Unable to delete Book");
 
-            return NoContent();
+            return Ok();
         }
 
     }

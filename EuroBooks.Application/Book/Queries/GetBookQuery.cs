@@ -3,6 +3,7 @@ using AutoMapper.QueryableExtensions;
 using EuroBooks.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,10 +29,20 @@ namespace EuroBooks.Application.Book.Queries
             {
                 var book = await context.Books
                     .Where(v => v.Id == request.Id)
-                    .ProjectTo<BookDTO>(mapper.ConfigurationProvider)
                     .FirstOrDefaultAsync();
 
-                return book;
+                if (book == null)
+                    throw new Exception("This book does not exist");
+
+                var bookdto = new BookDTO
+                {
+                    Id = book.Id,
+                    Name = book.Name,
+                    Text = book.Text,
+                    PurchasePrice = book.PurchasePrice
+                };
+
+                return bookdto;
             }
         }
     }

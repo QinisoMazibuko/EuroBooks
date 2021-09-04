@@ -176,7 +176,7 @@ namespace EuroBooks.API.Tests
 
         public static async Task ResetState()
         {
-            await checkpoint.Reset(configuration.GetConnectionString("EuroBooks"));
+            await checkpoint.Reset(configuration.GetConnectionString("EuroBooksConnection"));
             currentUserId = -1;
         }
 

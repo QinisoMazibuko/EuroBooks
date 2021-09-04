@@ -32,21 +32,22 @@ namespace EuroBooks.Application.Book.Commands
                 if (book != null)
                     throw new Exception("A book with same name already exist");
 
-                if (book == null)
+                var newBook = new Domain.Enities.Book
                 {
-                    context.Books.Add(new Domain.Enities.Book
-                    { 
-                        Name = request.Name,
-                        Text = request.Text, 
-                        PurchasePrice = request.PurchasePrice,
-                        IsActive = true ,
-                    });
-                }
+                    Name = request.Name,
+                    Text = request.Text,
+                    PurchasePrice = request.PurchasePrice,
+                    IsActive = true,
+                    Created = DateTime.Now,
+                    LastModified = DateTime.Now,
+                };
 
-                await context.Books.AddAsync(book);
+                if (book == null)
+                    context.Books.Add(newBook);
+
                 await context.SaveChangesAsync(cancellationToken);
 
-                return book.Id;
+                return newBook.Id;
             }
         }
     }
